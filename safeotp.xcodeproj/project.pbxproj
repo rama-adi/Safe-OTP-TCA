@@ -13,6 +13,7 @@
 		257BBA362D26FC73007B7CD6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 257BBA352D26FC73007B7CD6 /* README.md */; };
 		257BBA382D26FFBF007B7CD6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 257BBA372D26FFBD007B7CD6 /* LICENSE */; };
 		257BBA3C2D27001F007B7CD6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 257BBA3B2D27001C007B7CD6 /* .gitignore */; };
+		257BBA3E2D270948007B7CD6 /* safeotp-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 257BBA3D2D270948007B7CD6 /* safeotp-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		257BBA352D26FC73007B7CD6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		257BBA372D26FFBD007B7CD6 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		257BBA3B2D27001C007B7CD6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		257BBA3D2D270948007B7CD6 /* safeotp-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "safeotp-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -90,6 +92,7 @@
 		257BB9E42D1FE3A7007B7CD6 = {
 			isa = PBXGroup;
 			children = (
+				257BBA3D2D270948007B7CD6 /* safeotp-icon.png */,
 				257BBA3B2D27001C007B7CD6 /* .gitignore */,
 				257BBA352D26FC73007B7CD6 /* README.md */,
 				257BBA372D26FFBD007B7CD6 /* LICENSE */,
@@ -240,6 +243,7 @@
 			files = (
 				257BBA3C2D27001F007B7CD6 /* .gitignore in Resources */,
 				257BBA362D26FC73007B7CD6 /* README.md in Resources */,
+				257BBA3E2D270948007B7CD6 /* safeotp-icon.png in Resources */,
 				257BBA382D26FFBF007B7CD6 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

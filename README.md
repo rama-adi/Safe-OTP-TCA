@@ -1,8 +1,9 @@
 # SafeOTP
-
+<img align="left" width="80" height="80" src="safeotp-icon.png" alt="SafeOTP Icon">
 SafeOTP is a secure and feature-rich Time-based One-Time Password (TOTP) manager. It provides tools for generating TOTP codes, securely storing sensitive notes, and syncing data across devices via a WebSocket server. SafeOTP is designed with an emphasis on security and user convenience, offering a one-time device synchronization feature to ensure seamless setup without compromising data safety.
 
 This is yet another showcase project for TCA (The Composable Architecture) and SwiftUI, built by the team at [Point-Free](https://www.pointfree.co). This uses the latest and greatest TCA powered with Observable Architecture, so if you're looking to learn more about TCA, this is a great place to start!
+
 ---
 
 ## Features

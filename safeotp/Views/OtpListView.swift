@@ -15,9 +15,7 @@ struct OtpListFeature {
     
     @ObservableState
     struct State: Equatable {
-        var otps: IdentifiedArrayOf<OTPItem> = [
-            .init(issuer: "Auth test", secret: "I65VU7K5ZQL7WB4E")
-        ]
+        var otps: IdentifiedArrayOf<OTPItem> = []
     }
     
     enum Action {
@@ -25,7 +23,7 @@ struct OtpListFeature {
         case viewDidDisappear
         case otpUpdated(id: UUID, code: String, remaining: Int)
     }
-
+    
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
@@ -65,29 +63,45 @@ struct OtpListView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(store.otps) { otp in
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(otp.issuer)
-                                .font(.headline)
-                            Text(otp.otp ?? "Loading...")
-                                .fontDesign(.monospaced)
-                                .contentTransition(.numericText())
-                                .font(.title)
+            Group {
+                if store.otps.isEmpty {
+                    ContentUnavailableView {
+                        Label("No OTP Keys", systemImage: "key.fill")
+                    } description: {
+                        Text("Add a new key to get started.")
+                    } actions: {
+                        Button {
+                        } label: {
+                            Label("Add Key", systemImage: "plus")
                         }
-                        
-                        Spacer()
-                        
-                        spinnerWithDuration(duration: otp.remainingTime ?? 30)
+                    }
+                    
+                } else {
+                    List {
+                        ForEach(store.otps) { otp in
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text(otp.issuer)
+                                        .font(.headline)
+                                    Text(otp.otp ?? "Loading...")
+                                        .fontDesign(.monospaced)
+                                        .contentTransition(.numericText())
+                                        .font(.title)
+                                }
+                                
+                                Spacer()
+                                
+                                spinnerWithDuration(duration: otp.remainingTime ?? 30)
+                            }
+                        }
+                    }
+                    .onAppear {
+                        store.send(.viewDidAppear)
+                    }
+                    .onDisappear {
+                        store.send(.viewDidDisappear)
                     }
                 }
-            }
-            .onAppear {
-                store.send(.viewDidAppear)
-            }
-            .onDisappear {
-                store.send(.viewDidDisappear)
             }
             .navigationTitle("OTP Keys")
         }

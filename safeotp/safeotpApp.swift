@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct safeotpApp: App {
+    @MainActor
+      static let store = Store(initialState: AppFeature.State()) {
+        AppFeature()
+          ._printChanges()
+      }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppView(store: Self.store)
         }
     }
 }

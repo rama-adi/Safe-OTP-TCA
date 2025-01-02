@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		257BBA1C2D1FEC74007B7CD6 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 257BBA1B2D1FEC74007B7CD6 /* ComposableArchitecture */; };
+		257BBA292D26D972007B7CD6 /* SwiftOTP in Frameworks */ = {isa = PBXBuildFile; productRef = 257BBA282D26D972007B7CD6 /* SwiftOTP */; };
+		257BBA342D26E287007B7CD6 /* IdentifiedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 257BBA332D26E287007B7CD6 /* IdentifiedCollections */; };
+		257BBA362D26FC73007B7CD6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 257BBA352D26FC73007B7CD6 /* README.md */; };
+		257BBA382D26FFBF007B7CD6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 257BBA372D26FFBD007B7CD6 /* LICENSE */; };
+		257BBA3C2D27001F007B7CD6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 257BBA3B2D27001C007B7CD6 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		257BB9FE2D1FE3A8007B7CD6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +36,9 @@
 		257BB9ED2D1FE3A7007B7CD6 /* safeotp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = safeotp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		257BB9FD2D1FE3A8007B7CD6 /* safeotpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = safeotpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		257BBA072D1FE3A8007B7CD6 /* safeotpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = safeotpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		257BBA352D26FC73007B7CD6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		257BBA372D26FFBD007B7CD6 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		257BBA3B2D27001C007B7CD6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257BBA342D26E287007B7CD6 /* IdentifiedCollections in Frameworks */,
+				257BBA292D26D972007B7CD6 /* SwiftOTP in Frameworks */,
+				257BBA1C2D1FEC74007B7CD6 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +90,9 @@
 		257BB9E42D1FE3A7007B7CD6 = {
 			isa = PBXGroup;
 			children = (
+				257BBA3B2D27001C007B7CD6 /* .gitignore */,
+				257BBA352D26FC73007B7CD6 /* README.md */,
+				257BBA372D26FFBD007B7CD6 /* LICENSE */,
 				257BB9EF2D1FE3A7007B7CD6 /* safeotp */,
 				257BBA002D1FE3A8007B7CD6 /* safeotpTests */,
 				257BBA0A2D1FE3A8007B7CD6 /* safeotpUITests */,
@@ -112,6 +130,9 @@
 			);
 			name = safeotp;
 			packageProductDependencies = (
+				257BBA1B2D1FEC74007B7CD6 /* ComposableArchitecture */,
+				257BBA282D26D972007B7CD6 /* SwiftOTP */,
+				257BBA332D26E287007B7CD6 /* IdentifiedCollections */,
 			);
 			productName = safeotp;
 			productReference = 257BB9ED2D1FE3A7007B7CD6 /* safeotp.app */;
@@ -195,6 +216,11 @@
 			);
 			mainGroup = 257BB9E42D1FE3A7007B7CD6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				257BBA1A2D1FEC74007B7CD6 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				257BBA272D26D972007B7CD6 /* XCRemoteSwiftPackageReference "SwiftOTP" */,
+				257BBA322D26E287007B7CD6 /* XCRemoteSwiftPackageReference "swift-identified-collections" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 257BB9EE2D1FE3A7007B7CD6 /* Products */;
 			projectDirPath = "";
@@ -212,6 +238,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257BBA3C2D27001F007B7CD6 /* .gitignore in Resources */,
+				257BBA362D26FC73007B7CD6 /* README.md in Resources */,
+				257BBA382D26FFBF007B7CD6 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.ramaadi.safeotp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -441,7 +470,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.ramaadi.safeotp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -558,6 +587,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		257BBA1A2D1FEC74007B7CD6 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.0;
+			};
+		};
+		257BBA272D26D972007B7CD6 /* XCRemoteSwiftPackageReference "SwiftOTP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lachlanbell/SwiftOTP.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
+		257BBA322D26E287007B7CD6 /* XCRemoteSwiftPackageReference "swift-identified-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-identified-collections";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		257BBA1B2D1FEC74007B7CD6 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 257BBA1A2D1FEC74007B7CD6 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		257BBA282D26D972007B7CD6 /* SwiftOTP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 257BBA272D26D972007B7CD6 /* XCRemoteSwiftPackageReference "SwiftOTP" */;
+			productName = SwiftOTP;
+		};
+		257BBA332D26E287007B7CD6 /* IdentifiedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 257BBA322D26E287007B7CD6 /* XCRemoteSwiftPackageReference "swift-identified-collections" */;
+			productName = IdentifiedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 257BB9E52D1FE3A7007B7CD6 /* Project object */;
 }
